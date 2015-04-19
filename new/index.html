@@ -1,0 +1,57 @@
+<html>
+ <head>
+   <title>TeachMeme</title>
+	<style>
+	* {
+	  padding: 0;
+	  margin: 0;
+	}
+	.fit {
+	  max-width: 100%;
+	  max-height: 100%;
+	}
+	.center {
+	  display: block;
+	  margin: auto;
+	}
+
+	img {margin:0; padding: 0px; border: none}
+
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 94%;
+  max-width: 1100px;
+  font-family: helvetica, sans-serif;
+}
+.content {
+  position: relative;
+  padding-top: 80px;
+  p { margin-bottom: 10px; }
+}
+
+	</style>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" language="JavaScript">
+	function set_body_height()
+	{
+	    var wh = $(window).height();
+	    $('body').attr('style', 'height:' + wh + 'px;');
+	}
+	$(document).ready(function() {
+	    set_body_height();
+	    $(window).bind('resize', function() { set_body_height(); });
+	});
+	</script>
+ </head>
+ <body>
+
+     <img class="center fit" style="background:url(meme_background.png);  background-size: 100% 100%; " src="main_text.png" />
+     <br>
+     <br>
+     <img id = "how" class="center fit" src = "how_it_works.png">
+     <img id = "value_prop" class="center fit" src = "value_prop.png">
+     <img id = "team" class="center fit" src = "team.png">
+ </body>
+</html>
