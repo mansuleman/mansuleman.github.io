@@ -35,6 +35,7 @@
     top: 50%;
     right: 50%;
     bottom: 50%;
+    width:100%;
     left: 50%;
     margin-top: -100px; /* (calculate half the height of your image) */
     margin-left: -100px; /* (calculate half the width of your image) */
@@ -42,6 +43,7 @@
 	</style>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type="text/javascript" language="JavaScript">
+
 	function set_body_height()
 	{
 	    var wh = $(window).height();
@@ -55,11 +57,24 @@
  </head>
  <body>
 
-   <div class="fixed-background">
-     <img src = "Meme-Image-Collage-5.png" width="100%" usemap="#image_link">
-   </div>
-   <map name = "image_links">
-   <area shape = "rect" coords="43%,13%,57%,14%" href="www.google.com" alt="Sign up">
-   </map>
+<div>
+<img id = "img_ID" src="title.png" border="0" width="100%" alt="" usemap="#map"/>
+<a name="about"><img src="about.png" width="100%"/></a>
+<a name="team"><img src="team.png" width="100%"/></a>
+</div>
+
+<map id="map_ID" name="map">
+    <area shape="circle" coords="1947, 1566, 118" href="#about"/>
+    <area shape="rect" coords="1665, 1043, 2220, 1159" />
+    <area shape="rect" coords="3526, 134, 3704, 219" href="#team" />
+    <area shape="rect" coords="3236, 132, 3417, 220" href="#about" />
+</map>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="imageMapResizer.min.js"></script>
+<script type="text/javascript">
+		$('map').imageMapResize();
+	</script>
+
  </body>
 </html>
