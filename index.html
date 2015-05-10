@@ -1,46 +1,27 @@
 <html>
-<head>
-<link href="tm.css" rel="stylesheet" type="text/css">
-</head>
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:500px;}
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
+ <head>
+   <title>TeachMeme</title>
+ </head>
+ <body>
 
-
-
-<table width="100%" border="0">
-<tr>
-<td>
-<img src='lp1.png' height = 321 width = 450 <align = "left">
-</td>
-<td>
-<center>
-<!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup">
-<form action="//cmu.us10.list-manage.com/subscribe/post?u=90fa144083952d9b3526775b4&amp;id=d66f888bb5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Get notified</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_90fa144083952d9b3526775b4_d66f888bb5" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
+<div>
+<img id = "img_ID" src="title.png" border="0" width="100%" alt="" usemap="#map"/>
+<a name="about"><img src="about.png" width="100%"/></a>
+<a name="team"><img src="team.png" width="100%"/></a>
 </div>
-<!--End mc_embed_signup-->
-</center>
-</td>
 
+<map id="map_ID" name="map">
+    <area shape="circle" coords="1947, 1566, 118" href="#about"/>
+    <area shape="rect" coords="1665, 1043, 2220, 1159" href="http://eepurl.com/bmDoJH" />
+    <area shape="rect" coords="3526, 134, 3704, 219" href="#team" />
+    <area shape="rect" coords="3236, 132, 3417, 220" href="#about" />
+</map>
 
-<td>
-<img src='lp2.jpg' height = 550 width = 365.2 align = "center">
-</td>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="imageMapResizer.min.js"></script>
+<script type="text/javascript">
+		$('map').imageMapResize();
+	</script>
 
-</tr>
-</table>
-
-
-
+ </body>
 </html>
